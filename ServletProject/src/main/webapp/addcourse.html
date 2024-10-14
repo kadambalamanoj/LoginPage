@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Course</title>
+
+    <style>
+        body{
+            background-color: azure;
+        }
+
+    </style>
+</head>
+<body>
+<h3 align="center"><u>Add Course</u></h3>
+    <form method="post" action="addcourse">
+        <table align="center">
+            <tr>
+                <td><label for="coursecode"><b>Course Code</b></label></td>
+                <td><input type="text" name="coursecode" required></td>
+            </tr>
+            <tr>
+                <td><label for="coursetitle"><b>Course Title</b></label></td>
+                <td><input type="text" name="coursetitle" required></td>
+            </tr>
+            <tr>
+                <td><label for="credits"><b>Credits</b></label></td>
+                <td><input type="number" name="credits" step="0.1"required></td>
+            </tr>
+            <tr>
+                <td><label for="ltps"><b>LTPS</b></label></td>
+                <td><input type="text" name="ltps" required></td>
+            </tr>
+            <tr>
+                <td><label for="department"><b>Department</b></label></td>
+                <td>
+                    <select name="department" required>
+                        <option value="">--Select--</option>
+                        <option value="CSE">CSE</option>
+                        <option value="CSIT">CSIT</option>
+                        <option value="ECE">ECE</option>
+                    </select>
+                </td>
+            </tr>
+            <!-- <tr align="center">
+                <td><input type="submit" value="Add"></td>
+                <td><input type="reset" value="Clear"></td>
+            </tr> -->
+            <tr>
+                <td>
+                     <button> 
+                    Submit
+                    </button>
+                </td><br><br>
+                <td>   
+                    <button> 
+                        Clear
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </form>
+   
+</body>
+</html>

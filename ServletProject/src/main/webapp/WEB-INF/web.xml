@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+<display-name>
+Servlet Web application project
+</display-name>
+<welcome-file-list>
+<welcome-file>index.html</welcome-file>
+</welcome-file-list>
+<context-param>
+<param-name>college</param-name>
+<param-value> kluniversity </param-value>
+</context-param>
+
+<context-param>
+<param-name>section</param-name>
+<param-value>2</param-value>
+</context-param>
+
+  <display-name>Servlet Web application Project</display-name>
+   <servlet>
+  	<servlet-name>FirstServlet</servlet-name>
+  	<servlet-class>lifecycledemo.FirstServlet</servlet-class>
+  </servlet>
+   <servlet>
+   	<servlet-name>SecondServlet</servlet-name>
+   	
+   	<servlet-class>lifecycledemo.SecondServlet</servlet-class>
+   </servlet>
+   <servlet>
+   	<servlet-name>ThirdServlet</servlet-name>
+   	<display-name>ThirdServlet</display-name>
+   	<description></description>
+   	<servlet-class>lifecycledemo.ThirdServlet</servlet-class>
+   </servlet>
+   
+   <servlet>
+   <init-param> 
+   <param-name>id </param-name>
+   <param-value>2002 </param-value>
+   </init-param>
+   <init-param> 
+   <param-name> name</param-name>
+   <param-value> RAMA</param-value>
+   </init-param>
+   
+   	<servlet-name>DemoServlet1</servlet-name>
+   	<servlet-class>parametersdemo.DemoServlet1</servlet-class>
+   </servlet>
+   
+   <servlet>
+   <init-param> 
+   <param-name>username </param-name>
+   <param-value>klef </param-value>
+   </init-param>
+   <init-param> 
+   <param-name> password</param-name>
+   <param-value> klu123</param-value>
+   </init-param>
+   	<servlet-name>DemoServlet2</servlet-name>
+   	<servlet-class>parametersdemo.DemoServlet2</servlet-class>
+   </servlet>
+   <servlet>
+   	<servlet-name>DemoServlet</servlet-name>
+   	<display-name>DemoServlet</display-name>
+   	<description></description>
+   	<servlet-class>servletcollaboration.DemoServlet</servlet-class>
+   </servlet>
+   <servlet>
+   	<servlet-name>DisplayServlet</servlet-name>
+   	<display-name>DisplayServlet</display-name>
+   	<description></description>
+   	<servlet-class>formhandling.DisplayServlet</servlet-class>
+   </servlet>
+   <servlet>
+   	<description>
+   	</description>
+   	<display-name>AddCourseServlet</display-name>
+   	<servlet-name>AddCourseServlet</servlet-name>
+   	<servlet-class>dboperations.AddCourseServlet</servlet-class>
+   </servlet>
+   <servlet>
+   	<description>
+   	</description>
+   	<display-name>ViewCoursesServlet</display-name>
+   	<servlet-name>ViewCoursesServlet</servlet-name>
+   	<servlet-class>dboperations.ViewCoursesServlet</servlet-class>
+   </servlet>
+  <servlet-mapping>
+  	<servlet-name>FirstServlet</servlet-name>
+  	<url-pattern>/first</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SecondServlet</servlet-name>
+  	<url-pattern>/Second</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ThirdServlet</servlet-name>
+  	<url-pattern>/third</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DemoServlet1</servlet-name>
+  	<url-pattern>/demo1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DemoServlet2</servlet-name>
+  	<url-pattern>/demo2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DemoServlet</servlet-name>
+  	<url-pattern>/demo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DisplayServlet</servlet-name>
+  	<url-pattern>/display</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddCourseServlet</servlet-name>
+  	<url-pattern>/addcourse</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ViewCoursesServlet</servlet-name>
+  	<url-pattern>/viewcourses</url-pattern>
+  </servlet-mapping>
+</web-app>
