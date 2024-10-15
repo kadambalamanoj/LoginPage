@@ -1,6 +1,6 @@
 <html>
 <head>
-<title> JSP page</title> 
+<title>This is JSP page</title> 
 </head>
 <body>
 <h3>I am in index.jsp file</h3>
